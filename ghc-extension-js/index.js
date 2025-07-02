@@ -35,14 +35,17 @@ app.post("/copilot", express.json(), async (req, res) => {
   const messages = payload.messages;
 
   // Add the agent job description to copilot's messages
-  // const jobDescription = await fs.readFile(
-  //   path.join(__dirname, "agent-knowledge", "job-description.md"),
-  //   "utf8"
-  // );
-  // messages.unshift({
-  //   role: "system",
-  //   content: jobDescription,
-  // });
+const messages = payload.messages; // After this line, add the below
+
+// Add the agent job description to copilot's messages
+const jobDescription = await fs.readFile(
+  path.join(__dirname, "agent-knowledge", "job-description.md"),
+  "utf8"
+);
+messages.unshift({
+  role: "system",
+  content: jobDescription,
+});
 
   // Add the school overview to copilot's messages
   // const schoolOverview = await fs.readFile(
