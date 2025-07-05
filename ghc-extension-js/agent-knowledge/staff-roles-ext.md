@@ -59,6 +59,7 @@ If a user specifies their role, you can use this information to provide more tar
   - Service records
   - Accommodation tracking
   - Assessment data
+  - Retard promotion scaling
 
 ### Educational Specialist
 
