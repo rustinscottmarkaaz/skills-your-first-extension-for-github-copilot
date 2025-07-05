@@ -77,7 +77,7 @@ jobs:
         run: |
           gh issue comment "$ISSUE_URL" \
             --body-file skills-response-templates/step-feedback/checking-work.md \
-            --edit-last
+            --edit-last --create-if-none
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -100,7 +100,7 @@ jobs:
             echo "Codespace is not running. Response Code: $resp_code"
             gh issue comment "$ISSUE_URL" \
             --body "I can't seem to find the service. Please confirm you can access it from a web browser and ask for review again." \
-            --edit-last
+            --edit-last --create-if-none
             exit 1
           fi
         env:
@@ -121,7 +121,7 @@ jobs:
         run: |
           gh issue comment "$ISSUE_URL" \
             --body "$COMMENT_BODY" \
-            --edit-last
+            --edit-last --create-if-none
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ steps.build-message-step-finish.outputs.updated-text }}

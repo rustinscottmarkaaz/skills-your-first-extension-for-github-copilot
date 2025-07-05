@@ -9,4 +9,8 @@ This is an overview of the high school so instructors can more naturally describ
 
 - The school year starts in August and ends in May.
 - There are 3 trimesters per year.
+<<<<<<< HEAD
 - There is a 4th summer cycle, but it is optional.
+=======
+- There is a 4th summer cycle, but it is optional.
+>>>>>>> dbc0d29b37a6236a612046a1b98b826625d14c21
