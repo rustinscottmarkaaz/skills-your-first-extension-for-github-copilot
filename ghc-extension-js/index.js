@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 // Create a web service that listens for incoming requests
 const app = express();
 
-// Provide a basic website if the user visits the extension's URL
+// Provide a basic website if the user visits the extension's URL and make shit happen.
 app.get("/", (req, res) => {
   console.log("Endpoint called: /");
   res.sendFile(__dirname + "/info.html");
