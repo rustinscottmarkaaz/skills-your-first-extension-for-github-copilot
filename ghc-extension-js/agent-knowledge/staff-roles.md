@@ -9,6 +9,7 @@ If a user specifies their role, you can use this information to provide more tar
 - Staff recruitment, management, and development
 - School improvement plans, vision setting, and culture building
 - Community relations
+- Getting coffee for the boss
 
 ## Instructional Staff
 
